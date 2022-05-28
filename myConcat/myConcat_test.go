@@ -22,6 +22,19 @@ func TestJoin(t *testing.T) {
 	if kafkaAusschnitt != "Als Gregor Samsa ..." {
 		t.Error("Expected:", "Als Gregor Samsa ...", "got:", kafkaAusschnitt)
 	}
+
+	// Durch Aufheben der Kommentierung der nachfolgenden Zeilen
+	// erreichen Sie eine Testabdeckung von 100%
+	// sliceOfStringOfKafkaAusschnitt = []string{}
+	// kafkaAusschnitt = Join(sliceOfStringOfKafkaAusschnitt, " ")
+	// if kafkaAusschnitt != "" {
+	// 	t.Error("Expected:", "", "got:", kafkaAusschnitt)
+	// }
+	// sliceOfStringOfKafkaAusschnitt = []string{"Samsa"}
+	// kafkaAusschnitt = Join(sliceOfStringOfKafkaAusschnitt, " ")
+	// if kafkaAusschnitt != "Samsa" {
+	// 	t.Error("Expected:", "Samsa", "got:", kafkaAusschnitt)
+	// }
 }
 
 func ExampleConcat() {

@@ -1,0 +1,12 @@
+mode: set
+/home/jens/development/myGoBenchmark/myConcat/myConcat.go:3.48,7.42 2 1
+/home/jens/development/myGoBenchmark/myConcat/myConcat.go:12.2,12.22 1 1
+/home/jens/development/myGoBenchmark/myConcat/myConcat.go:7.42,10.3 2 1
+/home/jens/development/myGoBenchmark/myConcat/myConcat.go:15.46,16.20 1 1
+/home/jens/development/myGoBenchmark/myConcat/myConcat.go:23.2,24.34 2 1
+/home/jens/development/myGoBenchmark/myConcat/myConcat.go:28.2,30.30 3 1
+/home/jens/development/myGoBenchmark/myConcat/myConcat.go:34.2,34.18 1 1
+/home/jens/development/myGoBenchmark/myConcat/myConcat.go:17.9,18.12 1 0
+/home/jens/development/myGoBenchmark/myConcat/myConcat.go:19.9,20.18 1 0
+/home/jens/development/myGoBenchmark/myConcat/myConcat.go:24.34,26.3 1 1
+/home/jens/development/myGoBenchmark/myConcat/myConcat.go:30.30,33.3 2 1
