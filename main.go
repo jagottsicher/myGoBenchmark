@@ -16,9 +16,11 @@ func main() {
 	// 	fmt.Println(v)
 	// }
 
-	fmt.Println(sliceOfStrings, "\n")
-
+	fmt.Println(sliceOfStrings)
+	fmt.Println()
 	fmt.Println(myConcat.Concat(sliceOfStrings))
+	fmt.Println()
+	fmt.Println(myConcat.Join(sliceOfStrings, " "))
 
 	return
 }
