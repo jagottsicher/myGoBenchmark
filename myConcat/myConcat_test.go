@@ -15,9 +15,25 @@ func TestConcat(t *testing.T) {
 	}
 }
 
+func TestJoin(t *testing.T) {
+	kafkaAusschnitt := "Als Gregor Samsa ..."
+	sliceOfStringOfKafkaAusschnitt := strings.Split(kafkaAusschnitt, " ")
+	kafkaAusschnitt = Join(sliceOfStringOfKafkaAusschnitt, " ")
+	if kafkaAusschnitt != "Als Gregor Samsa ..." {
+		t.Error("Expected:", "Als Gregor Samsa ...", "got:", kafkaAusschnitt)
+	}
+}
+
 func ExampleConcat() {
 	sliceOfStringOfKafkaAusschnitt := []string{"Als", "Gregor", "Samsa", "..."}
 	fmt.Println(Concat(sliceOfStringOfKafkaAusschnitt))
+	// Output:
+	// Als Gregor Samsa ...
+}
+
+func ExampleJoin() {
+	sliceOfStringOfKafkaAusschnitt := []string{"Als", "Gregor", "Samsa", "..."}
+	fmt.Println(Join(sliceOfStringOfKafkaAusschnitt, " "))
 	// Output:
 	// Als Gregor Samsa ...
 }
@@ -31,5 +47,13 @@ func BenchmarkConcat(b *testing.B) {
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
 		Concat(sliceStringTemp)
+	}
+}
+
+func BenchmarkJoin(b *testing.B) {
+	sliceStringTemp = strings.Split(kafka, " ")
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		Join(sliceStringTemp, " ")
 	}
 }
